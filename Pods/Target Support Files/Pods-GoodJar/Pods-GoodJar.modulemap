@@ -1,0 +1,6 @@
+framework module Pods_GoodJar {
+  umbrella header "Pods-GoodJar-umbrella.h"
+
+  export *
+  module * { export * }
+}

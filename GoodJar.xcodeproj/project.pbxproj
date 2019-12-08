@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23253127239CB45500630724 /* NewEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23253126239CB45500630724 /* NewEditProfileViewController.swift */; };
+		2363960D2398BAB500A62213 /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363960C2398BAB500A62213 /* EditProfileTableViewController.swift */; };
+		238D0927239C80AB00DCE987 /* GoodJarUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238D0926239C80AA00DCE987 /* GoodJarUsers.swift */; };
+		2398C5F5239957170010856E /* ProfilePhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C5F4239957170010856E /* ProfilePhotoTableViewCell.swift */; };
+		2398C5F7239965DE0010856E /* UserNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C5F6239965DE0010856E /* UserNameTableViewCell.swift */; };
+		2398C5FE23996D920010856E /* PrivateTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C5FD23996D920010856E /* PrivateTitleTableViewCell.swift */; };
+		2398C60023996DA10010856E /* EmailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C5FF23996DA10010856E /* EmailTableViewCell.swift */; };
+		2398C6022399723A0010856E /* BlankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C6012399723A0010856E /* BlankTableViewCell.swift */; };
+		2398C6042399A2790010856E /* BlankPasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C6032399A2790010856E /* BlankPasswordTableViewCell.swift */; };
+		2398C6062399A2960010856E /* PasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C6052399A2960010856E /* PasswordTableViewCell.swift */; };
+		2398C609239A09DB0010856E /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C608239A09DB0010856E /* SearchTableViewCell.swift */; };
+		2398C60B239A0FC10010856E /* NotificationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C60A239A0FC10010856E /* NotificationsTableViewCell.swift */; };
+		2398C60D239A0FD50010856E /* NotificationsBlankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C60C239A0FD50010856E /* NotificationsBlankTableViewCell.swift */; };
+		2398C615239AD1F60010856E /* FriendRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C614239AD1F60010856E /* FriendRequestViewController.swift */; };
+		2398C617239AD40B0010856E /* BlockUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C616239AD40B0010856E /* BlockUserTableViewCell.swift */; };
+		2398C619239AD4390010856E /* BlockedUsersTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C618239AD4390010856E /* BlockedUsersTitleTableViewCell.swift */; };
+		2398C61B239AD44D0010856E /* BlockedUsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C61A239AD44D0010856E /* BlockedUsersTableViewCell.swift */; };
+		23A6DF5F239B56D0003E8886 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A6DF5E239B56D0003E8886 /* UserInfo.swift */; };
+		23A6DF61239B5B2C003E8886 /* UsersInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A6DF60239B5B2C003E8886 /* UsersInfo.swift */; };
+		23C2A813239834020043DA48 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23C2A812239834020043DA48 /* GoogleService-Info.plist */; };
+		23C3ADF7239AE6BF00B7667B /* GoodJarUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C3ADF6239AE6BF00B7667B /* GoodJarUser.swift */; };
+		23C65AD82397896C008A249A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C65AD72397896C008A249A /* SettingsViewController.swift */; };
+		23C65ADA23981C63008A249A /* JarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C65AD923981C63008A249A /* JarViewController.swift */; };
+		23C65ADC23981C74008A249A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C65ADB23981C74008A249A /* SearchViewController.swift */; };
+		23C65AE223981CA0008A249A /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C65AE123981CA0008A249A /* PasswordViewController.swift */; };
+		23C65AE423981CC1008A249A /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C65AE323981CC1008A249A /* NotificationsViewController.swift */; };
+		23C65AE623981CE0008A249A /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C65AE523981CE0008A249A /* PrivacyViewController.swift */; };
+		23C6C319239439EF00612EB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C6C318239439EF00612EB8 /* AppDelegate.swift */; };
+		23C6C31B239439EF00612EB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C6C31A239439EF00612EB8 /* ViewController.swift */; };
+		23C6C31E239439EF00612EB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C6C31C239439EF00612EB8 /* Main.storyboard */; };
+		23C6C320239439F100612EB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C6C31F239439F100612EB8 /* Assets.xcassets */; };
+		23C6C323239439F100612EB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C6C321239439F100612EB8 /* LaunchScreen.storyboard */; };
+		23F92F4F239C39D200F06FC2 /* NameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F92F4E239C39D200F06FC2 /* NameTableViewCell.swift */; };
+		23F92F51239C3A4900F06FC2 /* BirthdayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F92F50239C3A4900F06FC2 /* BirthdayTableViewCell.swift */; };
+		23F92F53239C3A7B00F06FC2 /* PhoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F92F52239C3A7B00F06FC2 /* PhoneTableViewCell.swift */; };
+		255F9D9F0050517F452BC256 /* Pods_GoodJar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A411DC540B6564E675EFC32 /* Pods_GoodJar.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21C4E6D0A69C8E956A26D0C9 /* Pods-GoodJar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodJar.debug.xcconfig"; path = "Target Support Files/Pods-GoodJar/Pods-GoodJar.debug.xcconfig"; sourceTree = "<group>"; };
+		23253126239CB45500630724 /* NewEditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEditProfileViewController.swift; sourceTree = "<group>"; };
+		2363960C2398BAB500A62213 /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
+		238D0926239C80AA00DCE987 /* GoodJarUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJarUsers.swift; sourceTree = "<group>"; };
+		2398C5F4239957170010856E /* ProfilePhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoTableViewCell.swift; sourceTree = "<group>"; };
+		2398C5F6239965DE0010856E /* UserNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameTableViewCell.swift; sourceTree = "<group>"; };
+		2398C5FD23996D920010856E /* PrivateTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateTitleTableViewCell.swift; sourceTree = "<group>"; };
+		2398C5FF23996DA10010856E /* EmailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTableViewCell.swift; sourceTree = "<group>"; };
+		2398C6012399723A0010856E /* BlankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankTableViewCell.swift; sourceTree = "<group>"; };
+		2398C6032399A2790010856E /* BlankPasswordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankPasswordTableViewCell.swift; sourceTree = "<group>"; };
+		2398C6052399A2960010856E /* PasswordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTableViewCell.swift; sourceTree = "<group>"; };
+		2398C608239A09DB0010856E /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		2398C60A239A0FC10010856E /* NotificationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewCell.swift; sourceTree = "<group>"; };
+		2398C60C239A0FD50010856E /* NotificationsBlankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsBlankTableViewCell.swift; sourceTree = "<group>"; };
+		2398C614239AD1F60010856E /* FriendRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestViewController.swift; sourceTree = "<group>"; };
+		2398C616239AD40B0010856E /* BlockUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockUserTableViewCell.swift; sourceTree = "<group>"; };
+		2398C618239AD4390010856E /* BlockedUsersTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockedUsersTitleTableViewCell.swift; sourceTree = "<group>"; };
+		2398C61A239AD44D0010856E /* BlockedUsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockedUsersTableViewCell.swift; sourceTree = "<group>"; };
+		23A6DF5E239B56D0003E8886 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		23A6DF60239B5B2C003E8886 /* UsersInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersInfo.swift; sourceTree = "<group>"; };
+		23C2A812239834020043DA48 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		23C3ADF6239AE6BF00B7667B /* GoodJarUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJarUser.swift; sourceTree = "<group>"; };
+		23C65AD72397896C008A249A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		23C65AD923981C63008A249A /* JarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JarViewController.swift; sourceTree = "<group>"; };
+		23C65ADB23981C74008A249A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		23C65AE123981CA0008A249A /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		23C65AE323981CC1008A249A /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		23C65AE523981CE0008A249A /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		23C6C315239439EF00612EB8 /* GoodJar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodJar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23C6C318239439EF00612EB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23C6C31A239439EF00612EB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23C6C31D239439EF00612EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23C6C31F239439F100612EB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23C6C322239439F100612EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23C6C324239439F100612EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23F92F4E239C39D200F06FC2 /* NameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTableViewCell.swift; sourceTree = "<group>"; };
+		23F92F50239C3A4900F06FC2 /* BirthdayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayTableViewCell.swift; sourceTree = "<group>"; };
+		23F92F52239C3A7B00F06FC2 /* PhoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneTableViewCell.swift; sourceTree = "<group>"; };
+		6A411DC540B6564E675EFC32 /* Pods_GoodJar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodJar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B399F74CEC2E4069B7797BB7 /* Pods-GoodJar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodJar.release.xcconfig"; path = "Target Support Files/Pods-GoodJar/Pods-GoodJar.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23C6C312239439EF00612EB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255F9D9F0050517F452BC256 /* Pods_GoodJar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AFE3F2E50FA61682C45FC37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A411DC540B6564E675EFC32 /* Pods_GoodJar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2398C5FC23996C0F0010856E /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				2398C5F4239957170010856E /* ProfilePhotoTableViewCell.swift */,
+				23F92F4E239C39D200F06FC2 /* NameTableViewCell.swift */,
+				2398C5F6239965DE0010856E /* UserNameTableViewCell.swift */,
+				23F92F50239C3A4900F06FC2 /* BirthdayTableViewCell.swift */,
+				2398C5FD23996D920010856E /* PrivateTitleTableViewCell.swift */,
+				2398C5FF23996DA10010856E /* EmailTableViewCell.swift */,
+				23F92F52239C3A7B00F06FC2 /* PhoneTableViewCell.swift */,
+				2398C6012399723A0010856E /* BlankTableViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		2398C6072399A6550010856E /* Password Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2398C6052399A2960010856E /* PasswordTableViewCell.swift */,
+				2398C6032399A2790010856E /* BlankPasswordTableViewCell.swift */,
+			);
+			path = "Password Custom Cells";
+			sourceTree = "<group>";
+		};
+		2398C60E239A0FE10010856E /* NotificationsCustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				2398C60A239A0FC10010856E /* NotificationsTableViewCell.swift */,
+				2398C60C239A0FD50010856E /* NotificationsBlankTableViewCell.swift */,
+			);
+			path = NotificationsCustomCells;
+			sourceTree = "<group>";
+		};
+		2398C613239A10280010856E /* PrivacyCustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				2398C616239AD40B0010856E /* BlockUserTableViewCell.swift */,
+				2398C618239AD4390010856E /* BlockedUsersTitleTableViewCell.swift */,
+				2398C61A239AD44D0010856E /* BlockedUsersTableViewCell.swift */,
+			);
+			path = PrivacyCustomCells;
+			sourceTree = "<group>";
+		};
+		23C6C30C239439EF00612EB8 = {
+			isa = PBXGroup;
+			children = (
+				23C6C317239439EF00612EB8 /* GoodJar */,
+				23C6C316239439EF00612EB8 /* Products */,
+				88A601FA8A20BA3F6C49F05D /* Pods */,
+				1AFE3F2E50FA61682C45FC37 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		23C6C316239439EF00612EB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23C6C315239439EF00612EB8 /* GoodJar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23C6C317239439EF00612EB8 /* GoodJar */ = {
+			isa = PBXGroup;
+			children = (
+				23C6C318239439EF00612EB8 /* AppDelegate.swift */,
+				23C3ADF6239AE6BF00B7667B /* GoodJarUser.swift */,
+				238D0926239C80AA00DCE987 /* GoodJarUsers.swift */,
+				23A6DF5E239B56D0003E8886 /* UserInfo.swift */,
+				23A6DF60239B5B2C003E8886 /* UsersInfo.swift */,
+				23C6C31A239439EF00612EB8 /* ViewController.swift */,
+				23C65AD72397896C008A249A /* SettingsViewController.swift */,
+				23C65AD923981C63008A249A /* JarViewController.swift */,
+				23C65ADB23981C74008A249A /* SearchViewController.swift */,
+				2398C608239A09DB0010856E /* SearchTableViewCell.swift */,
+				2398C614239AD1F60010856E /* FriendRequestViewController.swift */,
+				23253126239CB45500630724 /* NewEditProfileViewController.swift */,
+				2363960C2398BAB500A62213 /* EditProfileTableViewController.swift */,
+				2398C5FC23996C0F0010856E /* CustomCells */,
+				23C65AE123981CA0008A249A /* PasswordViewController.swift */,
+				2398C6072399A6550010856E /* Password Custom Cells */,
+				23C65AE323981CC1008A249A /* NotificationsViewController.swift */,
+				2398C60E239A0FE10010856E /* NotificationsCustomCells */,
+				23C65AE523981CE0008A249A /* PrivacyViewController.swift */,
+				2398C613239A10280010856E /* PrivacyCustomCells */,
+				23C6C31C239439EF00612EB8 /* Main.storyboard */,
+				23C6C31F239439F100612EB8 /* Assets.xcassets */,
+				23C6C321239439F100612EB8 /* LaunchScreen.storyboard */,
+				23C6C324239439F100612EB8 /* Info.plist */,
+				23C2A812239834020043DA48 /* GoogleService-Info.plist */,
+			);
+			path = GoodJar;
+			sourceTree = "<group>";
+		};
+		88A601FA8A20BA3F6C49F05D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21C4E6D0A69C8E956A26D0C9 /* Pods-GoodJar.debug.xcconfig */,
+				B399F74CEC2E4069B7797BB7 /* Pods-GoodJar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23C6C314239439EF00612EB8 /* GoodJar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23C6C327239439F100612EB8 /* Build configuration list for PBXNativeTarget "GoodJar" */;
+			buildPhases = (
+				EC191D31D4A15655C9261275 /* [CP] Check Pods Manifest.lock */,
+				23C6C311239439EF00612EB8 /* Sources */,
+				23C6C312239439EF00612EB8 /* Frameworks */,
+				23C6C313239439EF00612EB8 /* Resources */,
+				9748E4B9B837F32BE071FC67 /* [CP] Embed Pods Frameworks */,
+				06A4E289EAC4D4E479249E59 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoodJar;
+			productName = GoodJar;
+			productReference = 23C6C315239439EF00612EB8 /* GoodJar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23C6C30D239439EF00612EB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Ivelisse Mandato";
+				TargetAttributes = {
+					23C6C314239439EF00612EB8 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 23C6C310239439EF00612EB8 /* Build configuration list for PBXProject "GoodJar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23C6C30C239439EF00612EB8;
+			productRefGroup = 23C6C316239439EF00612EB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23C6C314239439EF00612EB8 /* GoodJar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23C6C313239439EF00612EB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23C6C323239439F100612EB8 /* LaunchScreen.storyboard in Resources */,
+				23C2A813239834020043DA48 /* GoogleService-Info.plist in Resources */,
+				23C6C320239439F100612EB8 /* Assets.xcassets in Resources */,
+				23C6C31E239439EF00612EB8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06A4E289EAC4D4E479249E59 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodJar/Pods-GoodJar-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodJar/Pods-GoodJar-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoodJar/Pods-GoodJar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9748E4B9B837F32BE071FC67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodJar/Pods-GoodJar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodJar/Pods-GoodJar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoodJar/Pods-GoodJar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC191D31D4A15655C9261275 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoodJar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23C6C311239439EF00612EB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2398C5F7239965DE0010856E /* UserNameTableViewCell.swift in Sources */,
+				23C65AE423981CC1008A249A /* NotificationsViewController.swift in Sources */,
+				23A6DF61239B5B2C003E8886 /* UsersInfo.swift in Sources */,
+				2398C6042399A2790010856E /* BlankPasswordTableViewCell.swift in Sources */,
+				2398C61B239AD44D0010856E /* BlockedUsersTableViewCell.swift in Sources */,
+				23C65ADC23981C74008A249A /* SearchViewController.swift in Sources */,
+				2398C60B239A0FC10010856E /* NotificationsTableViewCell.swift in Sources */,
+				23C65AE223981CA0008A249A /* PasswordViewController.swift in Sources */,
+				23F92F51239C3A4900F06FC2 /* BirthdayTableViewCell.swift in Sources */,
+				2398C615239AD1F60010856E /* FriendRequestViewController.swift in Sources */,
+				23A6DF5F239B56D0003E8886 /* UserInfo.swift in Sources */,
+				23253127239CB45500630724 /* NewEditProfileViewController.swift in Sources */,
+				2398C6062399A2960010856E /* PasswordTableViewCell.swift in Sources */,
+				2398C5F5239957170010856E /* ProfilePhotoTableViewCell.swift in Sources */,
+				23C3ADF7239AE6BF00B7667B /* GoodJarUser.swift in Sources */,
+				23F92F53239C3A7B00F06FC2 /* PhoneTableViewCell.swift in Sources */,
+				2363960D2398BAB500A62213 /* EditProfileTableViewController.swift in Sources */,
+				2398C619239AD4390010856E /* BlockedUsersTitleTableViewCell.swift in Sources */,
+				23F92F4F239C39D200F06FC2 /* NameTableViewCell.swift in Sources */,
+				23C6C31B239439EF00612EB8 /* ViewController.swift in Sources */,
+				238D0927239C80AB00DCE987 /* GoodJarUsers.swift in Sources */,
+				2398C609239A09DB0010856E /* SearchTableViewCell.swift in Sources */,
+				2398C6022399723A0010856E /* BlankTableViewCell.swift in Sources */,
+				23C6C319239439EF00612EB8 /* AppDelegate.swift in Sources */,
+				2398C60023996DA10010856E /* EmailTableViewCell.swift in Sources */,
+				23C65ADA23981C63008A249A /* JarViewController.swift in Sources */,
+				23C65AE623981CE0008A249A /* PrivacyViewController.swift in Sources */,
+				2398C617239AD40B0010856E /* BlockUserTableViewCell.swift in Sources */,
+				2398C60D239A0FD50010856E /* NotificationsBlankTableViewCell.swift in Sources */,
+				2398C5FE23996D920010856E /* PrivateTitleTableViewCell.swift in Sources */,
+				23C65AD82397896C008A249A /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		23C6C31C239439EF00612EB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23C6C31D239439EF00612EB8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23C6C321239439F100612EB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23C6C322239439F100612EB8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23C6C325239439F100612EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23C6C326239439F100612EB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23C6C328239439F100612EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C4E6D0A69C8E956A26D0C9 /* Pods-GoodJar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_MODULES_DISABLE_PRIVATE_WARNING = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YL8R88DV2;
+				INFOPLIST_FILE = GoodJar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mandato.GoodJar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23C6C329239439F100612EB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B399F74CEC2E4069B7797BB7 /* Pods-GoodJar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_MODULES_DISABLE_PRIVATE_WARNING = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YL8R88DV2;
+				INFOPLIST_FILE = GoodJar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mandato.GoodJar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23C6C310239439EF00612EB8 /* Build configuration list for PBXProject "GoodJar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23C6C325239439F100612EB8 /* Debug */,
+				23C6C326239439F100612EB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23C6C327239439F100612EB8 /* Build configuration list for PBXNativeTarget "GoodJar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23C6C328239439F100612EB8 /* Debug */,
+				23C6C329239439F100612EB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23C6C30D239439EF00612EB8 /* Project object */;
+}
