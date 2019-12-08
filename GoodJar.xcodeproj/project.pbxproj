@@ -8,13 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		23253127239CB45500630724 /* NewEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23253126239CB45500630724 /* NewEditProfileViewController.swift */; };
-		2363960D2398BAB500A62213 /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363960C2398BAB500A62213 /* EditProfileTableViewController.swift */; };
 		238D0927239C80AB00DCE987 /* GoodJarUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238D0926239C80AA00DCE987 /* GoodJarUsers.swift */; };
-		2398C5F5239957170010856E /* ProfilePhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C5F4239957170010856E /* ProfilePhotoTableViewCell.swift */; };
-		2398C5F7239965DE0010856E /* UserNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C5F6239965DE0010856E /* UserNameTableViewCell.swift */; };
-		2398C5FE23996D920010856E /* PrivateTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C5FD23996D920010856E /* PrivateTitleTableViewCell.swift */; };
-		2398C60023996DA10010856E /* EmailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C5FF23996DA10010856E /* EmailTableViewCell.swift */; };
-		2398C6022399723A0010856E /* BlankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C6012399723A0010856E /* BlankTableViewCell.swift */; };
 		2398C6042399A2790010856E /* BlankPasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C6032399A2790010856E /* BlankPasswordTableViewCell.swift */; };
 		2398C6062399A2960010856E /* PasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C6052399A2960010856E /* PasswordTableViewCell.swift */; };
 		2398C609239A09DB0010856E /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C608239A09DB0010856E /* SearchTableViewCell.swift */; };
@@ -39,22 +33,13 @@
 		23C6C31E239439EF00612EB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C6C31C239439EF00612EB8 /* Main.storyboard */; };
 		23C6C320239439F100612EB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C6C31F239439F100612EB8 /* Assets.xcassets */; };
 		23C6C323239439F100612EB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C6C321239439F100612EB8 /* LaunchScreen.storyboard */; };
-		23F92F4F239C39D200F06FC2 /* NameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F92F4E239C39D200F06FC2 /* NameTableViewCell.swift */; };
-		23F92F51239C3A4900F06FC2 /* BirthdayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F92F50239C3A4900F06FC2 /* BirthdayTableViewCell.swift */; };
-		23F92F53239C3A7B00F06FC2 /* PhoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F92F52239C3A7B00F06FC2 /* PhoneTableViewCell.swift */; };
 		255F9D9F0050517F452BC256 /* Pods_GoodJar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A411DC540B6564E675EFC32 /* Pods_GoodJar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		21C4E6D0A69C8E956A26D0C9 /* Pods-GoodJar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodJar.debug.xcconfig"; path = "Target Support Files/Pods-GoodJar/Pods-GoodJar.debug.xcconfig"; sourceTree = "<group>"; };
 		23253126239CB45500630724 /* NewEditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEditProfileViewController.swift; sourceTree = "<group>"; };
-		2363960C2398BAB500A62213 /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
 		238D0926239C80AA00DCE987 /* GoodJarUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJarUsers.swift; sourceTree = "<group>"; };
-		2398C5F4239957170010856E /* ProfilePhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoTableViewCell.swift; sourceTree = "<group>"; };
-		2398C5F6239965DE0010856E /* UserNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameTableViewCell.swift; sourceTree = "<group>"; };
-		2398C5FD23996D920010856E /* PrivateTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateTitleTableViewCell.swift; sourceTree = "<group>"; };
-		2398C5FF23996DA10010856E /* EmailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTableViewCell.swift; sourceTree = "<group>"; };
-		2398C6012399723A0010856E /* BlankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankTableViewCell.swift; sourceTree = "<group>"; };
 		2398C6032399A2790010856E /* BlankPasswordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankPasswordTableViewCell.swift; sourceTree = "<group>"; };
 		2398C6052399A2960010856E /* PasswordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTableViewCell.swift; sourceTree = "<group>"; };
 		2398C608239A09DB0010856E /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
@@ -81,9 +66,6 @@
 		23C6C31F239439F100612EB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23C6C322239439F100612EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23C6C324239439F100612EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23F92F4E239C39D200F06FC2 /* NameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTableViewCell.swift; sourceTree = "<group>"; };
-		23F92F50239C3A4900F06FC2 /* BirthdayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayTableViewCell.swift; sourceTree = "<group>"; };
-		23F92F52239C3A7B00F06FC2 /* PhoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneTableViewCell.swift; sourceTree = "<group>"; };
 		6A411DC540B6564E675EFC32 /* Pods_GoodJar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodJar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B399F74CEC2E4069B7797BB7 /* Pods-GoodJar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodJar.release.xcconfig"; path = "Target Support Files/Pods-GoodJar/Pods-GoodJar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,21 +88,6 @@
 				6A411DC540B6564E675EFC32 /* Pods_GoodJar.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2398C5FC23996C0F0010856E /* CustomCells */ = {
-			isa = PBXGroup;
-			children = (
-				2398C5F4239957170010856E /* ProfilePhotoTableViewCell.swift */,
-				23F92F4E239C39D200F06FC2 /* NameTableViewCell.swift */,
-				2398C5F6239965DE0010856E /* UserNameTableViewCell.swift */,
-				23F92F50239C3A4900F06FC2 /* BirthdayTableViewCell.swift */,
-				2398C5FD23996D920010856E /* PrivateTitleTableViewCell.swift */,
-				2398C5FF23996DA10010856E /* EmailTableViewCell.swift */,
-				23F92F52239C3A7B00F06FC2 /* PhoneTableViewCell.swift */,
-				2398C6012399723A0010856E /* BlankTableViewCell.swift */,
-			);
-			path = CustomCells;
 			sourceTree = "<group>";
 		};
 		2398C6072399A6550010856E /* Password Custom Cells */ = {
@@ -184,8 +151,6 @@
 				2398C608239A09DB0010856E /* SearchTableViewCell.swift */,
 				2398C614239AD1F60010856E /* FriendRequestViewController.swift */,
 				23253126239CB45500630724 /* NewEditProfileViewController.swift */,
-				2363960C2398BAB500A62213 /* EditProfileTableViewController.swift */,
-				2398C5FC23996C0F0010856E /* CustomCells */,
 				23C65AE123981CA0008A249A /* PasswordViewController.swift */,
 				2398C6072399A6550010856E /* Password Custom Cells */,
 				23C65AE323981CC1008A249A /* NotificationsViewController.swift */,
@@ -344,7 +309,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2398C5F7239965DE0010856E /* UserNameTableViewCell.swift in Sources */,
 				23C65AE423981CC1008A249A /* NotificationsViewController.swift in Sources */,
 				23A6DF61239B5B2C003E8886 /* UsersInfo.swift in Sources */,
 				2398C6042399A2790010856E /* BlankPasswordTableViewCell.swift in Sources */,
@@ -352,28 +316,20 @@
 				23C65ADC23981C74008A249A /* SearchViewController.swift in Sources */,
 				2398C60B239A0FC10010856E /* NotificationsTableViewCell.swift in Sources */,
 				23C65AE223981CA0008A249A /* PasswordViewController.swift in Sources */,
-				23F92F51239C3A4900F06FC2 /* BirthdayTableViewCell.swift in Sources */,
 				2398C615239AD1F60010856E /* FriendRequestViewController.swift in Sources */,
 				23A6DF5F239B56D0003E8886 /* UserInfo.swift in Sources */,
 				23253127239CB45500630724 /* NewEditProfileViewController.swift in Sources */,
 				2398C6062399A2960010856E /* PasswordTableViewCell.swift in Sources */,
-				2398C5F5239957170010856E /* ProfilePhotoTableViewCell.swift in Sources */,
 				23C3ADF7239AE6BF00B7667B /* GoodJarUser.swift in Sources */,
-				23F92F53239C3A7B00F06FC2 /* PhoneTableViewCell.swift in Sources */,
-				2363960D2398BAB500A62213 /* EditProfileTableViewController.swift in Sources */,
 				2398C619239AD4390010856E /* BlockedUsersTitleTableViewCell.swift in Sources */,
-				23F92F4F239C39D200F06FC2 /* NameTableViewCell.swift in Sources */,
 				23C6C31B239439EF00612EB8 /* ViewController.swift in Sources */,
 				238D0927239C80AB00DCE987 /* GoodJarUsers.swift in Sources */,
 				2398C609239A09DB0010856E /* SearchTableViewCell.swift in Sources */,
-				2398C6022399723A0010856E /* BlankTableViewCell.swift in Sources */,
 				23C6C319239439EF00612EB8 /* AppDelegate.swift in Sources */,
-				2398C60023996DA10010856E /* EmailTableViewCell.swift in Sources */,
 				23C65ADA23981C63008A249A /* JarViewController.swift in Sources */,
 				23C65AE623981CE0008A249A /* PrivacyViewController.swift in Sources */,
 				2398C617239AD40B0010856E /* BlockUserTableViewCell.swift in Sources */,
 				2398C60D239A0FD50010856E /* NotificationsBlankTableViewCell.swift in Sources */,
-				2398C5FE23996D920010856E /* PrivateTitleTableViewCell.swift in Sources */,
 				23C65AD82397896C008A249A /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

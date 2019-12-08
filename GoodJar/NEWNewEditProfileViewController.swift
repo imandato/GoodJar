@@ -1,15 +1,15 @@
 //
-//  NewEditProfileViewController.swift
+//  NEWNewEditProfileViewController.swift
 //  GoodJar
 //
-//  Created by Ivelisse Mandato on 12/7/19.
+//  Created by Ivelisse Mandato on 12/8/19.
 //  Copyright © 2019 Ivelisse Mandato. All rights reserved.
 //
 
 import UIKit
 
-class EditProfileViewController: UIViewController {
-    
+class ProfileViewController: ViewController {
+
     @IBOutlet weak var profilePhotoSettings: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var userNameTextField: UITextField!
@@ -19,21 +19,20 @@ class EditProfileViewController: UIViewController {
     
     var userInfoInput: UserInfo!
     var usersInfoInputted: UsersInfo!
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         profilePhotoSettings.layer.masksToBounds = true
-        profilePhotoSettings.layer.cornerRadius = profilePhotoSettings.bounds.width / 2
+               profilePhotoSettings.layer.cornerRadius = profilePhotoSettings.bounds.width / 2
 
-        if userInfoInput == nil {
-            userInfoInput = UserInfo()
-        }
-        usersInfoInputted = UsersInfo()
-
+               if userInfoInput == nil {
+                   userInfoInput = UserInfo()
+               }
+               usersInfoInputted = UsersInfo()
     }
     
+
     func updateUserInterface(){
         nameTextField.text! = userInfoInput.name
         userNameTextField.text! = userInfoInput.userName
@@ -122,5 +121,5 @@ class EditProfileViewController: UIViewController {
     
     @IBAction func clearPhoneButtonPressed(_ sender: UIButton) {
     }
-    
+
 }
