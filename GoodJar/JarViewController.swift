@@ -15,15 +15,27 @@ class JarViewController: UIViewController, UIPopoverPresentationControllerDelega
     
     @IBOutlet weak var affirmationTextView: UITextView!
     @IBOutlet weak var userNameLabel: UILabel!
+    
     var yAtBase: CGFloat!
+    
+    var affirmations: Affirmations!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         yAtBase = messagePopUp.frame.origin.y
+        
+        affirmations = Affirmations()
+    }
+    
+    
+    func loadData(){
+        self.affirmationTextView.text! = affirmations.affirmationArray[0].affirmation
+        self.userNameLabel.text! = affirmations.affirmationArray[0].userName
     }
     
     @IBAction func jarBarButtonPressed(_ sender: Any) {
-      UIView.animate(withDuration: 0.0) {
+        loadData()
+        UIView.animate(withDuration: 0.0) {
           self.messagePopUp.frame.origin.y = self.messagePopUp.frame.origin.y - 724
       }
     }

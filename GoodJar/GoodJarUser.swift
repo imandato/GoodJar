@@ -10,11 +10,8 @@ import Foundation
 import Firebase
 
 class GoodJarUser {
-//    var name: String
     var displayName: String
-//    var birthday: String
     var email: String
-//    var phone: String
     var photoURL: String
     var documentID: String
     
@@ -23,11 +20,8 @@ class GoodJarUser {
     }
     
     init(displayName: String, email: String, photoURL: String, documentID: String) {
-//        self.name = name
         self.displayName = displayName
-//        self.birthday = birthday
         self.email = email
-//        self.phone = phone
         self.photoURL = photoURL
         self.documentID = documentID
     }

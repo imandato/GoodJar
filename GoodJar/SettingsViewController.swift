@@ -17,12 +17,14 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var usersInfoInputted: UsersInfo!
+    var goodJarUser: GoodJarUser!
+    var userInfo: UserInfo!
+
     
     var email: String!
     
-   
     
-    let settingsMenu = ["Edit Profile", "Password", "Notifications", "Privacy",""]
+    let settingsMenu = ["Edit Profile", "Friend Requests", "Notifications", "Privacy",""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +35,8 @@ class SettingsViewController: UIViewController {
         profilePhoto.layer.masksToBounds = true
         profilePhoto.layer.cornerRadius = profilePhoto.bounds.width / 2
         
-        usersInfoInputted = UsersInfo()
-        
+//        userName.text = userInfo.name
+//        userHandle.text = userInfo.userName
 
     }
     
@@ -45,7 +47,7 @@ class SettingsViewController: UIViewController {
         case 0: //For "one"
              segueIdentifier = "showEditProfile"
         case 1: //For "two"
-             segueIdentifier = "showPassword"
+             segueIdentifier = "showFriendRequests"
         case 2:
             segueIdentifier = "showNotifications"
         default:

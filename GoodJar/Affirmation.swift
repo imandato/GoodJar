@@ -1,51 +1,42 @@
 //
-//  UserInfo.swift
+//  Affirmation.swift
 //  GoodJar
 //
-//  Created by Ivelisse Mandato on 12/6/19.
+//  Created by Ivelisse Mandato on 12/9/19.
 //  Copyright © 2019 Ivelisse Mandato. All rights reserved.
 //
 
 import Foundation
 import Firebase
 
-class UserInfo {
-    var name: String
+class Affirmation {
+
     var userName: String
-    var birthday: String
-    var email: String
-    var phone: String
+    var affirmation: String
     var postingUserID: String
     var documentID: String
     
     var dictionary: [String: Any] {
-        return ["name": name, "userName": userName, "birthday": birthday, "email": email, "phone": phone, "postingUserID": postingUserID]
+        return ["userName": userName, "affirmation": affirmation, "postingUserID": postingUserID]
     }
 
-    init(name: String, userName: String, birthday: String, email: String, phone: String, documentID: String, postingUserID: String) {
-        self.name = name
+    init(userName: String, affirmation: String, documentID: String, postingUserID: String) {
         self.userName = userName
-        self.birthday = birthday
-        self.email = email
-        self.phone = phone
+        self.affirmation = affirmation
         self.documentID = documentID
         self.postingUserID = postingUserID
     }
     
     
     convenience init(dictionary: [String: Any]) {
-        let name = dictionary["name"] as! String? ?? ""
         let userName = dictionary["userName"] as! String? ?? ""
-        let birthday = dictionary["birthday"] as! String? ?? ""
-        let email = dictionary["email"] as! String? ?? ""
-        let phone = dictionary["phone"] as! String? ?? ""
+        let affirmation = dictionary["affirmation"] as! String? ?? ""
         let postingUserID = dictionary["postingUserID"] as! String? ?? ""
-        self.init(name: name, userName: userName, birthday: birthday, email: email, phone: phone, documentID: "", postingUserID: "")
+        self.init(userName: userName, affirmation: "", documentID: "", postingUserID: "")
     }
 
     convenience init() {
-        self.init(name: "", userName: "", birthday: "", email: "",
-                  phone: "", documentID: "", postingUserID: "")
+        self.init(userName: "", affirmation: "", documentID: "", postingUserID: "")
     }
     
     func saveData(completion: @escaping (Bool) -> ())  {
@@ -60,7 +51,7 @@ class UserInfo {
         let dataToSave: [String: Any] = self.dictionary
         // if we HAVE saved a record, we'll have an ID
         if self.documentID != "" {
-            let ref = db.collection("usersInfo").document(self.documentID)
+            let ref = db.collection("affirmations").document(self.documentID)
             ref.setData(dataToSave) { (error) in
                 if let error = error {
                     print("ERROR: updating document \(error.localizedDescription)")
@@ -71,7 +62,7 @@ class UserInfo {
             }
         } else { // Otherwise create a new document via .addDocument
             var ref: DocumentReference? = nil // Firestore will creat a new ID for us
-            ref = db.collection("usersInfo").addDocument(data: dataToSave) { (error) in
+            ref = db.collection("affirmations").addDocument(data: dataToSave) { (error) in
                 if let error = error {
                     print("ERROR: adding document \(error.localizedDescription)")
                     completion(false)
@@ -83,3 +74,4 @@ class UserInfo {
         }
     }
 }
+

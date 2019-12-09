@@ -12,7 +12,7 @@ class NotificationsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var notifications = ["Friend Suggestions", "Birthday Affirmation Reminders", "Daily Affirmation Reminders", "Turn Off All Notifications",""]
+    var notifications = ["Friend Suggestions", "Daily Affirmation Reminders", "Turn Off All Notifications",""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +43,7 @@ class NotificationsViewController: UIViewController {
 
 extension NotificationsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

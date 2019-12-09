@@ -40,7 +40,7 @@ class UsersInfo {
                     print("*** ERROR: adding the snapshot listener \(error!.localizedDescription)")
                     return completed()
                 }
-                
+
                 self.userInformation = []
                 // there are querySnapshot!.documents.count documents in teh teams snapshot
                 for document in querySnapshot!.documents {
@@ -52,9 +52,8 @@ class UsersInfo {
                 }
                 completed()
         }
-            
-            
-        }
+
+    }
     
     
 

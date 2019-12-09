@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		23253127239CB45500630724 /* NewEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23253126239CB45500630724 /* NewEditProfileViewController.swift */; };
+		2329DE93239E36120088C667 /* Affirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2329DE92239E36120088C667 /* Affirmation.swift */; };
+		2329DE95239E361F0088C667 /* Affirmations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2329DE94239E361F0088C667 /* Affirmations.swift */; };
+		2329DE97239E619A0088C667 /* ProfilePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2329DE96239E619A0088C667 /* ProfilePhoto.swift */; };
+		2329DE99239E61A50088C667 /* ProfilePhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2329DE98239E61A50088C667 /* ProfilePhotos.swift */; };
 		238D0927239C80AB00DCE987 /* GoodJarUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238D0926239C80AA00DCE987 /* GoodJarUsers.swift */; };
-		2398C6042399A2790010856E /* BlankPasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C6032399A2790010856E /* BlankPasswordTableViewCell.swift */; };
-		2398C6062399A2960010856E /* PasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C6052399A2960010856E /* PasswordTableViewCell.swift */; };
 		2398C609239A09DB0010856E /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C608239A09DB0010856E /* SearchTableViewCell.swift */; };
 		2398C60B239A0FC10010856E /* NotificationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C60A239A0FC10010856E /* NotificationsTableViewCell.swift */; };
 		2398C60D239A0FD50010856E /* NotificationsBlankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C60C239A0FD50010856E /* NotificationsBlankTableViewCell.swift */; };
@@ -25,7 +27,6 @@
 		23C65AD82397896C008A249A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C65AD72397896C008A249A /* SettingsViewController.swift */; };
 		23C65ADA23981C63008A249A /* JarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C65AD923981C63008A249A /* JarViewController.swift */; };
 		23C65ADC23981C74008A249A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C65ADB23981C74008A249A /* SearchViewController.swift */; };
-		23C65AE223981CA0008A249A /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C65AE123981CA0008A249A /* PasswordViewController.swift */; };
 		23C65AE423981CC1008A249A /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C65AE323981CC1008A249A /* NotificationsViewController.swift */; };
 		23C65AE623981CE0008A249A /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C65AE523981CE0008A249A /* PrivacyViewController.swift */; };
 		23C6C319239439EF00612EB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C6C318239439EF00612EB8 /* AppDelegate.swift */; };
@@ -39,9 +40,11 @@
 /* Begin PBXFileReference section */
 		21C4E6D0A69C8E956A26D0C9 /* Pods-GoodJar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodJar.debug.xcconfig"; path = "Target Support Files/Pods-GoodJar/Pods-GoodJar.debug.xcconfig"; sourceTree = "<group>"; };
 		23253126239CB45500630724 /* NewEditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEditProfileViewController.swift; sourceTree = "<group>"; };
+		2329DE92239E36120088C667 /* Affirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affirmation.swift; sourceTree = "<group>"; };
+		2329DE94239E361F0088C667 /* Affirmations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affirmations.swift; sourceTree = "<group>"; };
+		2329DE96239E619A0088C667 /* ProfilePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhoto.swift; sourceTree = "<group>"; };
+		2329DE98239E61A50088C667 /* ProfilePhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotos.swift; sourceTree = "<group>"; };
 		238D0926239C80AA00DCE987 /* GoodJarUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJarUsers.swift; sourceTree = "<group>"; };
-		2398C6032399A2790010856E /* BlankPasswordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankPasswordTableViewCell.swift; sourceTree = "<group>"; };
-		2398C6052399A2960010856E /* PasswordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTableViewCell.swift; sourceTree = "<group>"; };
 		2398C608239A09DB0010856E /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		2398C60A239A0FC10010856E /* NotificationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewCell.swift; sourceTree = "<group>"; };
 		2398C60C239A0FD50010856E /* NotificationsBlankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsBlankTableViewCell.swift; sourceTree = "<group>"; };
@@ -56,7 +59,6 @@
 		23C65AD72397896C008A249A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		23C65AD923981C63008A249A /* JarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JarViewController.swift; sourceTree = "<group>"; };
 		23C65ADB23981C74008A249A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		23C65AE123981CA0008A249A /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		23C65AE323981CC1008A249A /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		23C65AE523981CE0008A249A /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
 		23C6C315239439EF00612EB8 /* GoodJar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodJar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,15 +90,6 @@
 				6A411DC540B6564E675EFC32 /* Pods_GoodJar.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2398C6072399A6550010856E /* Password Custom Cells */ = {
-			isa = PBXGroup;
-			children = (
-				2398C6052399A2960010856E /* PasswordTableViewCell.swift */,
-				2398C6032399A2790010856E /* BlankPasswordTableViewCell.swift */,
-			);
-			path = "Password Custom Cells";
 			sourceTree = "<group>";
 		};
 		2398C60E239A0FE10010856E /* NotificationsCustomCells */ = {
@@ -144,6 +137,10 @@
 				238D0926239C80AA00DCE987 /* GoodJarUsers.swift */,
 				23A6DF5E239B56D0003E8886 /* UserInfo.swift */,
 				23A6DF60239B5B2C003E8886 /* UsersInfo.swift */,
+				2329DE92239E36120088C667 /* Affirmation.swift */,
+				2329DE94239E361F0088C667 /* Affirmations.swift */,
+				2329DE96239E619A0088C667 /* ProfilePhoto.swift */,
+				2329DE98239E61A50088C667 /* ProfilePhotos.swift */,
 				23C6C31A239439EF00612EB8 /* ViewController.swift */,
 				23C65AD72397896C008A249A /* SettingsViewController.swift */,
 				23C65AD923981C63008A249A /* JarViewController.swift */,
@@ -151,8 +148,6 @@
 				2398C608239A09DB0010856E /* SearchTableViewCell.swift */,
 				2398C614239AD1F60010856E /* FriendRequestViewController.swift */,
 				23253126239CB45500630724 /* NewEditProfileViewController.swift */,
-				23C65AE123981CA0008A249A /* PasswordViewController.swift */,
-				2398C6072399A6550010856E /* Password Custom Cells */,
 				23C65AE323981CC1008A249A /* NotificationsViewController.swift */,
 				2398C60E239A0FE10010856E /* NotificationsCustomCells */,
 				23C65AE523981CE0008A249A /* PrivacyViewController.swift */,
@@ -309,27 +304,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2329DE95239E361F0088C667 /* Affirmations.swift in Sources */,
 				23C65AE423981CC1008A249A /* NotificationsViewController.swift in Sources */,
 				23A6DF61239B5B2C003E8886 /* UsersInfo.swift in Sources */,
-				2398C6042399A2790010856E /* BlankPasswordTableViewCell.swift in Sources */,
 				2398C61B239AD44D0010856E /* BlockedUsersTableViewCell.swift in Sources */,
 				23C65ADC23981C74008A249A /* SearchViewController.swift in Sources */,
 				2398C60B239A0FC10010856E /* NotificationsTableViewCell.swift in Sources */,
-				23C65AE223981CA0008A249A /* PasswordViewController.swift in Sources */,
 				2398C615239AD1F60010856E /* FriendRequestViewController.swift in Sources */,
 				23A6DF5F239B56D0003E8886 /* UserInfo.swift in Sources */,
 				23253127239CB45500630724 /* NewEditProfileViewController.swift in Sources */,
-				2398C6062399A2960010856E /* PasswordTableViewCell.swift in Sources */,
+				2329DE93239E36120088C667 /* Affirmation.swift in Sources */,
 				23C3ADF7239AE6BF00B7667B /* GoodJarUser.swift in Sources */,
 				2398C619239AD4390010856E /* BlockedUsersTitleTableViewCell.swift in Sources */,
 				23C6C31B239439EF00612EB8 /* ViewController.swift in Sources */,
 				238D0927239C80AB00DCE987 /* GoodJarUsers.swift in Sources */,
 				2398C609239A09DB0010856E /* SearchTableViewCell.swift in Sources */,
 				23C6C319239439EF00612EB8 /* AppDelegate.swift in Sources */,
+				2329DE97239E619A0088C667 /* ProfilePhoto.swift in Sources */,
 				23C65ADA23981C63008A249A /* JarViewController.swift in Sources */,
 				23C65AE623981CE0008A249A /* PrivacyViewController.swift in Sources */,
 				2398C617239AD40B0010856E /* BlockUserTableViewCell.swift in Sources */,
 				2398C60D239A0FD50010856E /* NotificationsBlankTableViewCell.swift in Sources */,
+				2329DE99239E61A50088C667 /* ProfilePhotos.swift in Sources */,
 				23C65AD82397896C008A249A /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

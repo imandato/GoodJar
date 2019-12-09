@@ -19,6 +19,7 @@ class EditProfileViewController: UIViewController {
     
     var userInfoInput: UserInfo!
     var usersInfoInputted: UsersInfo!
+    var goodJar: GoodJarUsers!
     var email: String!
     
     override func viewDidLoad() {
@@ -31,28 +32,24 @@ class EditProfileViewController: UIViewController {
             userInfoInput = UserInfo()
         }
         usersInfoInputted = UsersInfo()
-        updateUserInterface()
+        loadData()
         
-        nameTextField.isEnabled = false
-        userNameTextField.isEnabled = false
-        birthdayTextField.isEnabled = false
-        emailTextField.isEnabled = false
-        phoneTextField.isEnabled = false
-        
+        goodJar = GoodJarUsers()
+    
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        
-//        usersInfoInputted.loadData {
-//            self.nameTextField.text! = self.usersInfoInputted.userInformation[0].name
-//            self.userNameTextField.text! = self.userInfoInput.userName
-//            self.birthdayTextField.text! = self.userInfoInput.birthday
-//            self.emailTextField.text! = self.userInfoInput.email
-//            self.phoneTextField.text! = self.userInfoInput.phone
-//        }
+        loadData()
         print(email)
+        }
+        
+    
+    
+
+
+    
+    func loadData(){
         usersInfoInputted.loadPersonalData(email) {
             self.nameTextField.text! = self.usersInfoInputted.userInformation[0].name
             self.userNameTextField.text! = self.usersInfoInputted.userInformation[0].userName
@@ -63,13 +60,13 @@ class EditProfileViewController: UIViewController {
     }
     
     
-    func updateUserInterface(){
-        nameTextField.text! = userInfoInput.name
-        userNameTextField.text! = userInfoInput.userName
-        birthdayTextField.text! = userInfoInput.birthday
-        emailTextField.text! = userInfoInput.email
-        phoneTextField.text! = userInfoInput.phone
-    }
+//    func updateUserInterface(){
+//        nameTextField.text! = userInfoInput.name
+//        userNameTextField.text! = userInfoInput.userName
+//        birthdayTextField.text! = userInfoInput.birthday
+//        emailTextField.text! = userInfoInput.email
+//        phoneTextField.text! = userInfoInput.phone
+//    }
     
     func leaveViewController() {
         let isPresentingInAddMode = presentingViewController is UINavigationController
@@ -91,37 +88,32 @@ class EditProfileViewController: UIViewController {
     
     @IBAction func nameTextFieldReturnPressed(_ sender: UITextField) {
         sender.resignFirstResponder()
-        nameTextField.isEnabled = false
         userInfoInput.name = nameTextField.text!
-        updateUserInterface()
+//        updateUserInterface()
     }
-    
+
     @IBAction func userNameTextFieldReturnPressed(_ sender: UITextField) {
         sender.resignFirstResponder()
-        userNameTextField.isEnabled = false
         userInfoInput.userName = userNameTextField.text!
-        updateUserInterface()
+//        updateUserInterface()
     }
-    
+
     @IBAction func birthdayTextFieldReturnPressed(_ sender: UITextField) {
         sender.resignFirstResponder()
-        birthdayTextField.isEnabled = false
         userInfoInput.birthday = birthdayTextField.text!
-        updateUserInterface()
+//        updateUserInterface()
     }
-    
+
     @IBAction func emailTextFieldReturnPressed(_ sender: UITextField) {
         sender.resignFirstResponder()
-        emailTextField.isEnabled = false
         userInfoInput.email = emailTextField.text!
-        updateUserInterface()
+//        updateUserInterface()
     }
-    
+
     @IBAction func phoneTextFieldReturnPressed(_ sender: UITextField) {
         sender.resignFirstResponder()
-        phoneTextField.isEnabled = false
         userInfoInput.phone = phoneTextField.text!
-        updateUserInterface()
+//        updateUserInterface()
     }
     
     
@@ -143,36 +135,31 @@ class EditProfileViewController: UIViewController {
     
     @IBAction func clearNameButtonPressed(_ sender: UIButton) {
         nameTextField.text! = ""
-        nameTextField.isEnabled = true
-        nameTextField.becomeFirstResponder()
-        
-    }
-    
-    
-    @IBAction func clearUserNameButtonPressed(_ sender: UIButton) {
-        userNameTextField.text! = ""
-        userNameTextField.isEnabled = true
-        userNameTextField.becomeFirstResponder()
-    }
-    
-    @IBAction func clearBirthdayButtonPressed(_ sender: Any) {
-        birthdayTextField.text! = ""
-        birthdayTextField.isEnabled = true
-        birthdayTextField.becomeFirstResponder()
-    }
-    
-    @IBAction func clearEmailButtonPressed(_ sender: UIButton) {
-        emailTextField.text! = ""
-        emailTextField.isEnabled = true
-        emailTextField.becomeFirstResponder()
+
 
     }
-    
+
+
+    @IBAction func clearUserNameButtonPressed(_ sender: UIButton) {
+        userNameTextField.text! = ""
+
+    }
+
+    @IBAction func clearBirthdayButtonPressed(_ sender: Any) {
+        birthdayTextField.text! = ""
+
+    }
+
+    @IBAction func clearEmailButtonPressed(_ sender: UIButton) {
+        emailTextField.text! = ""
+
+
+    }
+
     @IBAction func clearPhoneButtonPressed(_ sender: UIButton) {
         phoneTextField.text! = ""
-        phoneTextField.isEnabled = true
-        phoneTextField.becomeFirstResponder()
 
     }
     
 }
+

@@ -16,6 +16,7 @@ class ViewController: UIViewController {
 
     var authUI: FUIAuth!
     var goodJarUser: GoodJarUser!
+    var affirmation: Affirmation!
 
     @IBOutlet weak var profilePhoto: UIImageView!
     @IBOutlet weak var affirmationTextView: UITextView!
@@ -27,10 +28,13 @@ class ViewController: UIViewController {
     
     
     var email: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         authUI = FUIAuth.defaultAuthUI()
         authUI?.delegate = self
+        
+        affirmation = Affirmation()
         
         // Do any additional setup after loading the view.
         navigationController?.navigationBar.titleTextAttributes = [ NSAttributedString.Key.font: UIFont(name: "Georgia", size: 25.0)!]
@@ -49,6 +53,13 @@ class ViewController: UIViewController {
         signIn()
     }
     
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "showJar" {
+//            let destination = segue.destination as! JarViewController
+//            destination.affirmationTextView.text! = email
+//            destination.userNameLabel.text! =
+//        }
+//    }
     
     
     // Nothing should change unless you add different kinds of authentication.
@@ -103,6 +114,34 @@ class ViewController: UIViewController {
             let destination = segue.destination as! SettingsViewController
             destination.email = email
             print("View: \(email)")
+        }
+    }
+    func leaveViewController() {
+        let isPresentingInAddMode = presentingViewController is UINavigationController
+        if isPresentingInAddMode {
+            dismiss(animated: true, completion: nil)
+        } else {
+            navigationController?.popViewController(animated: true)
+        }
+    }
+    
+    
+    @IBAction func affirmationTextViewTapped(_ sender: UITapGestureRecognizer) {
+        affirmationTextView.becomeFirstResponder()
+        affirmationTextView.text = ""
+    }
+    
+    @IBAction func submitAffirmationButtonPressed(_ sender: UIButton) {
+        affirmation.affirmation = affirmationTextView.text!
+        
+        affirmation.saveData { success in
+            if success {
+                self.affirmationTextView.text! = ""
+                self.affirmationTextView.resignFirstResponder()
+                print("saved!")
+            }else{
+                print ("*** ERROR Counldn't leave this  View Controller because data wasn't saved")
+            }
         }
     }
     
