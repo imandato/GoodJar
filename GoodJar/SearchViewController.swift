@@ -11,6 +11,7 @@ import Firebase
 
 class SearchViewController: UIViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
     var goodJarUsers: GoodJarUsers!
@@ -31,6 +32,14 @@ class SearchViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if segue.identifier == "showProfile" {
+                let destination = segue.destination as! FriendRequestViewController
+                    destination.goodJarUsers = goodJarUsers
+                    print("Settings: \(goodJarUsers)")
+                }
+    }
+    
     func leaveViewController() {
         let isPresentingInAddMode = presentingViewController is UINavigationController
         if isPresentingInAddMode {
@@ -45,7 +54,10 @@ class SearchViewController: UIViewController {
     
     @IBAction func removeButtonPressed(_ sender: UIButton) {
     }
+        
 }
+
+
 
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -63,3 +75,4 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
 }
+

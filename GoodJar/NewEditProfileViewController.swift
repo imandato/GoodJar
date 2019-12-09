@@ -20,7 +20,8 @@ class EditProfileViewController: UIViewController {
     var userInfoInput: UserInfo!
     var usersInfoInputted: UsersInfo!
     var goodJar: GoodJarUsers!
-    var email: String!
+    var goodJarUser: GoodJarUser!
+//    var email: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,38 +36,42 @@ class EditProfileViewController: UIViewController {
         loadData()
         
         goodJar = GoodJarUsers()
+        
+        
+
     
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        loadData()
-        print(email)
+//        loadData()
+//        print(email)
         }
         
     
     
 
 
-    
+
     func loadData(){
-        usersInfoInputted.loadPersonalData(email) {
+        usersInfoInputted.loadData {
             self.nameTextField.text! = self.usersInfoInputted.userInformation[0].name
             self.userNameTextField.text! = self.usersInfoInputted.userInformation[0].userName
             self.birthdayTextField.text! = self.usersInfoInputted.userInformation[0].birthday
             self.emailTextField.text! = self.usersInfoInputted.userInformation[0].email
             self.phoneTextField.text! = self.usersInfoInputted.userInformation[0].phone
         }
+
     }
     
     
-//    func updateUserInterface(){
-//        nameTextField.text! = userInfoInput.name
-//        userNameTextField.text! = userInfoInput.userName
-//        birthdayTextField.text! = userInfoInput.birthday
-//        emailTextField.text! = userInfoInput.email
-//        phoneTextField.text! = userInfoInput.phone
-//    }
+    func updateUserInterface(){
+        nameTextField.text! = userInfoInput.name
+        userNameTextField.text! = userInfoInput.userName
+        birthdayTextField.text! = userInfoInput.birthday
+        emailTextField.text! = userInfoInput.email
+        phoneTextField.text! = userInfoInput.phone
+    }
     
     func leaveViewController() {
         let isPresentingInAddMode = presentingViewController is UINavigationController
@@ -124,7 +129,7 @@ class EditProfileViewController: UIViewController {
         userInfoInput.email = emailTextField.text!
         userInfoInput.phone = phoneTextField.text!
         
-        userInfoInput.saveData { success in
+        userInfoInput.saveData() { success in
             if success {
                 self.leaveViewController()
             }else{

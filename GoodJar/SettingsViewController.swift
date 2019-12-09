@@ -21,7 +21,7 @@ class SettingsViewController: UIViewController {
     var userInfo: UserInfo!
 
     
-    var email: String!
+//    var email: String!
     
     
     let settingsMenu = ["Edit Profile", "Friend Requests", "Notifications", "Privacy",""]
@@ -58,13 +58,13 @@ class SettingsViewController: UIViewController {
     
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showEditProfile" {
-            let destination = segue.destination as! EditProfileViewController
-            destination.email = email
-            print("Settings: \(email)")
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "showEditProfile" {
+//            let destination = segue.destination as! EditProfileViewController
+////            destination.email = email
+////            print("Settings: \(email)")
+//        }
+//    }
     
     
     func leaveViewController() {

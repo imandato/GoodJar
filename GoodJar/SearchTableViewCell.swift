@@ -13,7 +13,7 @@ class SearchTableViewCell: UITableViewCell {
     @IBOutlet weak var searchProfPhoto: UIImageView!
     @IBOutlet weak var nameSearchLabel: UILabel!
     @IBOutlet weak var usernameSearchLabel: UILabel!
-
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -35,3 +35,5 @@ class SearchTableViewCell: UITableViewCell {
     }
 
 }
+
+//goodJarUser.photoURL

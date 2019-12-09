@@ -13,14 +13,20 @@ class Affirmations{
     var affirmationArray = [Affirmation]()
     var db: Firestore!
     
+    var goodJarUsers: GoodJarUsers!
+    
     init() {
         db = Firestore.firestore()
     }
+    
+    
+
 
     func loadData(completed: @escaping () -> ())  {
-        db.collection("affirmations").addSnapshotListener { (querySnapshot, error) in
-            guard error == nil else {
-                print("*** ERROR: adding the snapshot listener \(error!.localizedDescription)")
+        db.collection("affirmations").whereField("recipientUserID", isEqualTo: (goodJarUsers.jarUserArray[0].documentID))
+            .getDocuments() { (querySnapshot, error) in
+                guard error == nil else {
+                    print("*** ERROR: adding the snapshot listener \(error!.localizedDescription)")
                 return completed()
             }
             self.affirmationArray = []

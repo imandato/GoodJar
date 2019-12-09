@@ -19,19 +19,37 @@ class JarViewController: UIViewController, UIPopoverPresentationControllerDelega
     var yAtBase: CGFloat!
     
     var affirmations: Affirmations!
+    var userInfo: UserInfo!
+    var goodJarUsers: GoodJarUsers!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         yAtBase = messagePopUp.frame.origin.y
         
         affirmations = Affirmations()
+        goodJarUsers = GoodJarUsers()
+            
     }
     
     
+    
+        
     func loadData(){
-        self.affirmationTextView.text! = affirmations.affirmationArray[0].affirmation
-        self.userNameLabel.text! = affirmations.affirmationArray[0].userName
+        affirmations.loadData {
+//            self.userNameLabel.text! = self.goodJarUsers.jarUserArray[0].displayName
+            self.affirmationTextView.text! = "What do you love about \(self.goodJarUsers.jarUserArray[0].displayName)?"
+            print("friend: \(self.goodJarUsers)")
+        }
     }
+
+        
+//        self.affirmationTextView.text! = affirmations.affirmationArray[0].affirmation
+//        affirmations.loadData{
+//            self.affirmationTextView.text! = self.affirmations.affirmationArray[0].affirmation
+//            self.affirmations.affirmationArray[0].recipientUserID = self.goodJarUsers.jarUserArray[0].documentID
+//        }
+//    }
     
     @IBAction func jarBarButtonPressed(_ sender: Any) {
         loadData()

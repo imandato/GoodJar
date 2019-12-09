@@ -69,17 +69,8 @@ class UserInfo {
                     completion(true)
                 }
             }
-        } else { // Otherwise create a new document via .addDocument
-            var ref: DocumentReference? = nil // Firestore will creat a new ID for us
-            ref = db.collection("usersInfo").addDocument(data: dataToSave) { (error) in
-                if let error = error {
-                    print("ERROR: adding document \(error.localizedDescription)")
-                    completion(false)
-                } else { // It worked! Save the documentID in Teams’s documentID property
-                    self.documentID = ref!.documentID
-                    completion(true)
-                }
-            }
         }
     }
 }
+    
+

@@ -12,6 +12,7 @@
 		2329DE95239E361F0088C667 /* Affirmations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2329DE94239E361F0088C667 /* Affirmations.swift */; };
 		2329DE97239E619A0088C667 /* ProfilePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2329DE96239E619A0088C667 /* ProfilePhoto.swift */; };
 		2329DE99239E61A50088C667 /* ProfilePhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2329DE98239E61A50088C667 /* ProfilePhotos.swift */; };
+		2329DE9B239E9FED0088C667 /* AcceptFriendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2329DE9A239E9FED0088C667 /* AcceptFriendRequest.swift */; };
 		238D0927239C80AB00DCE987 /* GoodJarUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238D0926239C80AA00DCE987 /* GoodJarUsers.swift */; };
 		2398C609239A09DB0010856E /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C608239A09DB0010856E /* SearchTableViewCell.swift */; };
 		2398C60B239A0FC10010856E /* NotificationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C60A239A0FC10010856E /* NotificationsTableViewCell.swift */; };
@@ -44,6 +45,7 @@
 		2329DE94239E361F0088C667 /* Affirmations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affirmations.swift; sourceTree = "<group>"; };
 		2329DE96239E619A0088C667 /* ProfilePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhoto.swift; sourceTree = "<group>"; };
 		2329DE98239E61A50088C667 /* ProfilePhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotos.swift; sourceTree = "<group>"; };
+		2329DE9A239E9FED0088C667 /* AcceptFriendRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptFriendRequest.swift; sourceTree = "<group>"; };
 		238D0926239C80AA00DCE987 /* GoodJarUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJarUsers.swift; sourceTree = "<group>"; };
 		2398C608239A09DB0010856E /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		2398C60A239A0FC10010856E /* NotificationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewCell.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				2398C608239A09DB0010856E /* SearchTableViewCell.swift */,
 				2398C614239AD1F60010856E /* FriendRequestViewController.swift */,
 				23253126239CB45500630724 /* NewEditProfileViewController.swift */,
+				2329DE9A239E9FED0088C667 /* AcceptFriendRequest.swift */,
 				23C65AE323981CC1008A249A /* NotificationsViewController.swift */,
 				2398C60E239A0FE10010856E /* NotificationsCustomCells */,
 				23C65AE523981CE0008A249A /* PrivacyViewController.swift */,
@@ -325,6 +328,7 @@
 				23C65AE623981CE0008A249A /* PrivacyViewController.swift in Sources */,
 				2398C617239AD40B0010856E /* BlockUserTableViewCell.swift in Sources */,
 				2398C60D239A0FD50010856E /* NotificationsBlankTableViewCell.swift in Sources */,
+				2329DE9B239E9FED0088C667 /* AcceptFriendRequest.swift in Sources */,
 				2329DE99239E61A50088C667 /* ProfilePhotos.swift in Sources */,
 				23C65AD82397896C008A249A /* SettingsViewController.swift in Sources */,
 			);

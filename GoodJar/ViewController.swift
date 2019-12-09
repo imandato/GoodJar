@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     var authUI: FUIAuth!
     var goodJarUser: GoodJarUser!
     var affirmation: Affirmation!
+    var userInfo: UserInfo!
+    var goodJarUsers: GoodJarUsers!
+    var usersInfo: UsersInfo!
 
     @IBOutlet weak var profilePhoto: UIImageView!
     @IBOutlet weak var affirmationTextView: UITextView!
@@ -27,7 +30,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var signOutButton: UIBarButtonItem!
     
     
-    var email: String!
+//    var email: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +38,9 @@ class ViewController: UIViewController {
         authUI?.delegate = self
         
         affirmation = Affirmation()
+        userInfo = UserInfo()
+        
+//        loadLabels()
         
         // Do any additional setup after loading the view.
         navigationController?.navigationBar.titleTextAttributes = [ NSAttributedString.Key.font: UIFont(name: "Georgia", size: 25.0)!]
@@ -53,13 +59,12 @@ class ViewController: UIViewController {
         signIn()
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "showJar" {
-//            let destination = segue.destination as! JarViewController
-//            destination.affirmationTextView.text! = email
-//            destination.userNameLabel.text! =
+//    func loadLabels(){
+//        if goodJarUsers.jarUserArray[0].documentID == usersInfo.userInformation[0].postingUserID{
+//            self.UserNameLabel.text! = goodJarUsers.jarUserArray[0].displayName
 //        }
 //    }
+    
     
     
     // Nothing should change unless you add different kinds of authentication.
@@ -80,7 +85,7 @@ class ViewController: UIViewController {
             navigationController?.toolbar.isHidden = false
             goodJarUser = GoodJarUser(user: currentUser!)
             goodJarUser.saveIfNewUser()
-            email = authUI.auth?.currentUser?.email
+//            email = authUI.auth?.currentUser?.email
             //print()
             
         }
@@ -109,13 +114,8 @@ class ViewController: UIViewController {
 
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showSettings" {
-            let destination = segue.destination as! SettingsViewController
-            destination.email = email
-            print("View: \(email)")
-        }
-    }
+
+    
     func leaveViewController() {
         let isPresentingInAddMode = presentingViewController is UINavigationController
         if isPresentingInAddMode {
