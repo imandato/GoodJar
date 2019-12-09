@@ -19,7 +19,7 @@ class EditProfileViewController: UIViewController {
     
     var userInfoInput: UserInfo!
     var usersInfoInputted: UsersInfo!
-
+    var email: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +31,37 @@ class EditProfileViewController: UIViewController {
             userInfoInput = UserInfo()
         }
         usersInfoInputted = UsersInfo()
-
+        updateUserInterface()
+        
+        nameTextField.isEnabled = false
+        userNameTextField.isEnabled = false
+        birthdayTextField.isEnabled = false
+        emailTextField.isEnabled = false
+        phoneTextField.isEnabled = false
+        
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
+//        usersInfoInputted.loadData {
+//            self.nameTextField.text! = self.usersInfoInputted.userInformation[0].name
+//            self.userNameTextField.text! = self.userInfoInput.userName
+//            self.birthdayTextField.text! = self.userInfoInput.birthday
+//            self.emailTextField.text! = self.userInfoInput.email
+//            self.phoneTextField.text! = self.userInfoInput.phone
+//        }
+        print(email)
+        usersInfoInputted.loadPersonalData(email) {
+            self.nameTextField.text! = self.usersInfoInputted.userInformation[0].name
+            self.userNameTextField.text! = self.usersInfoInputted.userInformation[0].userName
+            self.birthdayTextField.text! = self.usersInfoInputted.userInformation[0].birthday
+            self.emailTextField.text! = self.usersInfoInputted.userInformation[0].email
+            self.phoneTextField.text! = self.usersInfoInputted.userInformation[0].phone
+        }
+    }
+    
     
     func updateUserInterface(){
         nameTextField.text! = userInfoInput.name
@@ -51,7 +80,7 @@ class EditProfileViewController: UIViewController {
         }
     }
     
-
+    
     @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
         leaveViewController()
     }
@@ -62,30 +91,35 @@ class EditProfileViewController: UIViewController {
     
     @IBAction func nameTextFieldReturnPressed(_ sender: UITextField) {
         sender.resignFirstResponder()
+        nameTextField.isEnabled = false
         userInfoInput.name = nameTextField.text!
         updateUserInterface()
     }
     
     @IBAction func userNameTextFieldReturnPressed(_ sender: UITextField) {
         sender.resignFirstResponder()
+        userNameTextField.isEnabled = false
         userInfoInput.userName = userNameTextField.text!
         updateUserInterface()
     }
     
     @IBAction func birthdayTextFieldReturnPressed(_ sender: UITextField) {
         sender.resignFirstResponder()
+        birthdayTextField.isEnabled = false
         userInfoInput.birthday = birthdayTextField.text!
         updateUserInterface()
     }
     
     @IBAction func emailTextFieldReturnPressed(_ sender: UITextField) {
         sender.resignFirstResponder()
+        emailTextField.isEnabled = false
         userInfoInput.email = emailTextField.text!
         updateUserInterface()
     }
     
     @IBAction func phoneTextFieldReturnPressed(_ sender: UITextField) {
         sender.resignFirstResponder()
+        phoneTextField.isEnabled = false
         userInfoInput.phone = phoneTextField.text!
         updateUserInterface()
     }
@@ -108,19 +142,37 @@ class EditProfileViewController: UIViewController {
     }
     
     @IBAction func clearNameButtonPressed(_ sender: UIButton) {
+        nameTextField.text! = ""
+        nameTextField.isEnabled = true
+        nameTextField.becomeFirstResponder()
+        
     }
     
     
     @IBAction func clearUserNameButtonPressed(_ sender: UIButton) {
+        userNameTextField.text! = ""
+        userNameTextField.isEnabled = true
+        userNameTextField.becomeFirstResponder()
     }
     
     @IBAction func clearBirthdayButtonPressed(_ sender: Any) {
+        birthdayTextField.text! = ""
+        birthdayTextField.isEnabled = true
+        birthdayTextField.becomeFirstResponder()
     }
     
     @IBAction func clearEmailButtonPressed(_ sender: UIButton) {
+        emailTextField.text! = ""
+        emailTextField.isEnabled = true
+        emailTextField.becomeFirstResponder()
+
     }
     
     @IBAction func clearPhoneButtonPressed(_ sender: UIButton) {
+        phoneTextField.text! = ""
+        phoneTextField.isEnabled = true
+        phoneTextField.becomeFirstResponder()
+
     }
     
 }

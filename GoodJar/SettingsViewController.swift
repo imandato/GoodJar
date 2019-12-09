@@ -16,6 +16,10 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var userHandle: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
+    var usersInfoInputted: UsersInfo!
+    
+    var email: String!
+    
    
     
     let settingsMenu = ["Edit Profile", "Password", "Notifications", "Privacy",""]
@@ -29,8 +33,11 @@ class SettingsViewController: UIViewController {
         profilePhoto.layer.masksToBounds = true
         profilePhoto.layer.cornerRadius = profilePhoto.bounds.width / 2
         
+        usersInfoInputted = UsersInfo()
+        
 
     }
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let segueIdentifier: String
@@ -45,7 +52,17 @@ class SettingsViewController: UIViewController {
             segueIdentifier = "showPrivacy"
         }
         self.performSegue(withIdentifier: segueIdentifier, sender: self)
-    }    
+    }
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showEditProfile" {
+            let destination = segue.destination as! EditProfileViewController
+            destination.email = email
+            print("Settings: \(email)")
+        }
+    }
     
     
     func leaveViewController() {

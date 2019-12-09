@@ -16,15 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Woody Pup" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2X-2C-gLP">
-                                <rect key="frame" x="0.0" y="448" width="414" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Woody Pup" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2X-2C-gLP">
+                                <rect key="frame" x="0.0" y="445" width="414" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="What do you love about...?" translatesAutoresizingMaskIntoConstraints="NO" id="qmb-wh-BCy">
-                                <rect key="frame" x="0.0" y="473" width="414" height="323"/>
+                                <rect key="frame" x="0.0" y="478" width="414" height="323"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -32,7 +33,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
                             </textView>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bFU-2K-oJu">
-                                <rect key="frame" x="0.0" y="738" width="414" height="75"/>
+                                <rect key="frame" x="0.0" y="738" width="414" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94275027509999998" green="0.6546955498" blue="0.60129379910000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="17"/>
@@ -54,24 +55,13 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileStock" translatesAutoresizingMaskIntoConstraints="NO" id="wia-sq-exR">
-                                <rect key="frame" x="0.0" y="88" width="414" height="360"/>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileStock" translatesAutoresizingMaskIntoConstraints="NO" id="wia-sq-exR">
+                                <rect key="frame" x="0.0" y="56" width="414" height="396"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="wia-sq-exR" firstAttribute="top" secondItem="TOO-Ur-e9S" secondAttribute="top" id="1yw-2S-bQS"/>
-                            <constraint firstItem="wia-sq-exR" firstAttribute="top" secondItem="TOO-Ur-e9S" secondAttribute="top" id="CPR-Rf-mci"/>
-                            <constraint firstItem="g2X-2C-gLP" firstAttribute="trailing" secondItem="TOO-Ur-e9S" secondAttribute="trailing" id="O7U-lc-ZNV"/>
-                            <constraint firstItem="TOO-Ur-e9S" firstAttribute="bottom" secondItem="wia-sq-exR" secondAttribute="bottom" constant="365" id="SGO-zg-Hq7"/>
-                            <constraint firstItem="g2X-2C-gLP" firstAttribute="leading" secondItem="TOO-Ur-e9S" secondAttribute="leading" id="YWg-pP-bZw"/>
-                            <constraint firstItem="wia-sq-exR" firstAttribute="trailing" secondItem="TOO-Ur-e9S" secondAttribute="trailing" id="hPs-Kj-PVK"/>
-                            <constraint firstItem="g2X-2C-gLP" firstAttribute="top" secondItem="wia-sq-exR" secondAttribute="bottom" id="r79-IK-VdZ"/>
-                            <constraint firstItem="wia-sq-exR" firstAttribute="trailing" secondItem="TOO-Ur-e9S" secondAttribute="trailing" id="v1D-R6-Zfu"/>
-                            <constraint firstItem="wia-sq-exR" firstAttribute="leading" secondItem="TOO-Ur-e9S" secondAttribute="leading" id="wA0-TB-ovz"/>
-                            <constraint firstItem="wia-sq-exR" firstAttribute="leading" secondItem="TOO-Ur-e9S" secondAttribute="leading" id="wAX-PP-2IQ"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TOO-Ur-e9S"/>
                     </view>
                     <toolbarItems/>
@@ -392,7 +382,7 @@
                                                         <rect key="frame" x="8" y="8" width="21" height="19"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="tintColor" red="0.94275027509999998" green="0.6546955498" blue="0.60129379910000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <state key="normal" image="xmark"/>
+                                                        <state key="normal" image="xmark" catalog="system"/>
                                                         <connections>
                                                             <action selector="exitAffirmationButtonPressed:" destination="y6F-Ab-m9P" eventType="touchUpInside" id="WLF-Ir-hkU"/>
                                                         </connections>
@@ -540,7 +530,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHU-Cu-vlK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3215.9420289855075" y="-642.1875"/>
+            <point key="canvasLocation" x="3325" y="-642"/>
         </scene>
         <!--Privacy-->
         <scene sceneID="dXK-fK-GBv">
@@ -629,7 +619,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5e-OO-H0s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5266.666666666667" y="952.90178571428567"/>
+            <point key="canvasLocation" x="5267" y="935"/>
         </scene>
         <!--Notifications-->
         <scene sceneID="qDW-xJ-7dO">
@@ -778,7 +768,7 @@
             <objects>
                 <viewController id="RlG-fV-qM7" customClass="FriendRequestViewController" customModule="GoodJar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TwP-gc-ige">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileStock" translatesAutoresizingMaskIntoConstraints="NO" id="eDS-MI-GbO">
@@ -835,7 +825,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kOz-78-TOi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4186.9565217391309" y="-1326.5625"/>
+            <point key="canvasLocation" x="4286" y="-642"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="njY-oB-cYI">
@@ -853,7 +843,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ytH-GI-kns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3276.811594202899" y="-1326.5625"/>
+            <point key="canvasLocation" x="5267" y="-642"/>
         </scene>
         <!--Edit Profile-->
         <scene sceneID="RsN-jR-Zyh">
@@ -886,13 +876,13 @@
                                                     <action selector="changeProfilePhotoButtonPressed:" destination="wJo-sf-4c4" eventType="touchUpInside" id="DxO-Nz-xMC"/>
                                                 </connections>
                                             </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileStock" translatesAutoresizingMaskIntoConstraints="NO" id="3F7-qV-o9U">
+                                                <rect key="frame" x="132" y="8" width="150" height="150"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileStock" translatesAutoresizingMaskIntoConstraints="NO" id="3F7-qV-o9U">
-                                        <rect key="frame" x="132" y="101" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    </imageView>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vxE-qf-Ed4">
                                         <rect key="frame" x="106" y="296" width="308" height="47.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -912,7 +902,7 @@
                                                 <rect key="frame" x="109" y="6" width="254" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                                 <connections>
                                                     <action selector="userNameTextFieldReturnPressed:" destination="wJo-sf-4c4" eventType="editingDidEnd" id="qHz-KU-awR"/>
                                                 </connections>
@@ -961,7 +951,7 @@
                                                 <rect key="frame" x="109" y="6" width="254" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                                 <connections>
                                                     <action selector="nameTextFieldReturnPressed:" destination="wJo-sf-4c4" eventType="editingDidEnd" id="jpI-96-F5y"/>
                                                 </connections>
@@ -981,7 +971,7 @@
                                                         <rect key="frame" x="109" y="6" width="254" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                                         <connections>
                                                             <action selector="birthdayTextFieldReturnPressed:" destination="wJo-sf-4c4" eventType="editingDidEnd" id="jMM-RJ-JV8"/>
                                                         </connections>
@@ -1031,7 +1021,7 @@
                                                 <rect key="frame" x="109" y="6" width="254" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                                 <connections>
                                                     <action selector="emailTextFieldReturnPressed:" destination="wJo-sf-4c4" eventType="editingDidEnd" id="X6d-9W-0R0"/>
                                                 </connections>
@@ -1091,7 +1081,7 @@
                                                         <rect key="frame" x="109" y="6" width="254" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                                         <connections>
                                                             <action selector="phoneTextFieldReturnPressed:" destination="wJo-sf-4c4" eventType="editingDidEnd" id="HNY-r2-dzz"/>
                                                         </connections>
@@ -1146,7 +1136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNS-eR-BN5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3216" y="113"/>
+            <point key="canvasLocation" x="3325" y="113"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jFO-Jk-X01">
@@ -1164,20 +1154,19 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i7o-zQ-fgO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4443" y="16"/>
+            <point key="canvasLocation" x="4286" y="113"/>
         </scene>
     </scenes>
     <resources>
         <image name="jarHeart" width="475" height="800"/>
         <image name="line.horizontal.3" catalog="system" width="64" height="32"/>
         <image name="profileStock" width="3024" height="4032"/>
-        <image name="xmark" width="64" height="56"/>
         <image name="xmark" catalog="system" width="64" height="56"/>
         <image name="xmark.circle" catalog="system" width="64" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="1py-Xe-gci"/>
-        <segue reference="Axi-1G-rq8"/>
+        <segue reference="QER-SY-K8s"/>
         <segue reference="2rP-gq-3rC"/>
         <segue reference="6N6-7Q-bTs"/>
         <segue reference="yxS-Z0-I3x"/>

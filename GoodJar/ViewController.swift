@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var signOutButton: UIBarButtonItem!
     
     
-    
+    var email: String!
     override func viewDidLoad() {
         super.viewDidLoad()
         authUI = FUIAuth.defaultAuthUI()
@@ -69,6 +69,9 @@ class ViewController: UIViewController {
             navigationController?.toolbar.isHidden = false
             goodJarUser = GoodJarUser(user: currentUser!)
             goodJarUser.saveIfNewUser()
+            email = authUI.auth?.currentUser?.email
+            //print()
+            
         }
     }
 
@@ -93,6 +96,14 @@ class ViewController: UIViewController {
             print("*** ERROR: Couldn't sign out")
         }
 
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showSettings" {
+            let destination = segue.destination as! SettingsViewController
+            destination.email = email
+            print("View: \(email)")
+        }
     }
     
     @IBAction func myJarButtonPressed(_ sender: UIBarButtonItem) {
@@ -123,6 +134,9 @@ extension ViewController: FUIAuthDelegate {
             navigationController?.navigationBar.isHidden = false
             navigationController?.toolbar.isHidden = false
             print("^^^ We signed in with the user \(user.email ?? "unknown e-mail")")
+            
+         
+            
         }
     }
 }
