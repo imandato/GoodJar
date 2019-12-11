@@ -12,9 +12,9 @@ import Firebase
 class Affirmations{
     var affirmationArray = [Affirmation]()
     var db: Firestore!
-    
-    var goodJarUsers: GoodJarUsers!
-    
+    let affirmation = Affirmation()
+
+        
     init() {
         db = Firestore.firestore()
     }
@@ -23,7 +23,7 @@ class Affirmations{
 
 
     func loadData(completed: @escaping () -> ())  {
-        db.collection("affirmations").whereField("recipientUserID", isEqualTo: "postingUserID")
+        db.collection("affirmations").whereField("recipientUserID", isEqualTo: affirmation.documentID)
             .getDocuments() { (querySnapshot, error) in
                 guard error == nil else {
                     print("*** ERROR: adding the snapshot listener \(error!.localizedDescription)")

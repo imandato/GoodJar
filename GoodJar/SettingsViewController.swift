@@ -19,7 +19,6 @@ class MainViewController: UIViewController {
     @IBOutlet weak var profilePhoto: UIImageView!
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userHandle: UILabel!
-    @IBOutlet weak var tableView: UITableView!
     
     var authUI: FUIAuth!
     var goodJarUsers: GoodJarUsers!
@@ -58,12 +57,10 @@ class MainViewController: UIViewController {
         profilePhoto!.isHidden = true
         userName!.isHidden = true
         userHandle!.isHidden = true
-        tableView!.isHidden = true
         navigationController?.navigationBar.isHidden = true
         navigationController?.toolbar.isHidden = true
         
-        tableView.delegate = self
-        tableView.dataSource = self
+
         
         profilePhoto.layer.masksToBounds = true
         profilePhoto.layer.cornerRadius = profilePhoto.bounds.width / 2
@@ -96,9 +93,7 @@ class MainViewController: UIViewController {
             navigationController?.toolbar.isHidden = false
             goodJarUser = GoodJarUser(user: currentUser!)
             goodJarUser.saveIfNewUser()
-            //            email = authUI.auth?.currentUser?.email
-            //print()
-            
+
         }
     }
     
@@ -109,7 +104,6 @@ class MainViewController: UIViewController {
             profilePhoto!.isHidden = true
             userName!.isHidden = true
             userHandle!.isHidden = true
-            tableView!.isHidden = true
             navigationController?.navigationBar.isHidden = true
             navigationController?.toolbar.isHidden = true
             signIn()
@@ -117,7 +111,6 @@ class MainViewController: UIViewController {
             profilePhoto!.isHidden = true
             userName!.isHidden = true
             userHandle!.isHidden = true
-            tableView!.isHidden = true
             navigationController?.navigationBar.isHidden = true
             navigationController?.toolbar.isHidden = true
             print("*** ERROR: Couldn't sign out")
@@ -131,30 +124,6 @@ class MainViewController: UIViewController {
     }
     
     
-    
-    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    //        let segueIdentifier: String
-    //        switch indexPath.row {
-    //        case 0: //For "one"
-    //             segueIdentifier = "showEditProfile"
-    //        case 1: //For "two"
-    //             segueIdentifier = "showFriendRequests"
-    //        case 2:
-    //            segueIdentifier = "showNotifications"
-    //        default:
-    //            segueIdentifier = "showPrivacy"
-    //        }
-    //        self.performSegue(withIdentifier: segueIdentifier, sender: self)
-    //    }
-    
-    
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "showJar" {
-//            let destination = segue.destination as! JarViewController
-//            destination.userId = goodJarUser.documentID
-//        }
-//    }
     
     
     func leaveViewController() {
@@ -204,14 +173,26 @@ extension MainViewController: FUIAuthDelegate {
             profilePhoto!.isHidden = false
             userName!.isHidden = false
             userHandle!.isHidden = false
-            tableView!.isHidden = false
             navigationController?.navigationBar.isHidden = false
             navigationController?.toolbar.isHidden = false
             print("^^^ We signed in with the user \(user.email ?? "unknown e-mail")")
             
-            
-            
         }
+    }
+    
+    func authPickerViewController(forAuthUI authUI: FUIAuth) -> FUIAuthPickerViewController {
+        let loginViewController = FUIAuthPickerViewController(authUI: authUI)
+        loginViewController.view.backgroundColor = UIColor.white
+        
+        let marginInsets: CGFloat = 16
+        let imageHeight: CGFloat = 225
+        let imageY = self.view.center.y - imageHeight
+        let logoFrame = CGRect(x: self.view.frame.origin.x + marginInsets, y: imageY, width: self.view.frame.width - (marginInsets*2), height: imageHeight)
+        let logoImageView = UIImageView(frame: logoFrame)
+        logoImageView.image = UIImage(named: "logo")
+        logoImageView.contentMode = .scaleAspectFit
+        loginViewController.view.addSubview(logoImageView)
+        return loginViewController
     }
 }
 
