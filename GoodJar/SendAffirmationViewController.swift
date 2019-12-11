@@ -10,7 +10,7 @@ import UIKit
 import SDWebImage
 
 
-class FriendRequestViewController: UIViewController {
+class SendAffirmationViewController: UIViewController {
     
     @IBOutlet weak var userProfilePhoto: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!

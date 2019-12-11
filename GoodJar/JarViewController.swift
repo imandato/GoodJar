@@ -30,6 +30,8 @@ class JarViewController: UIViewController {
 //            print(self.affirmation)
             self.jarImageButton.isHidden = false
         
+//        affirmationText = affirmation.affirmation
+        
 //        }
 //
    
@@ -42,7 +44,7 @@ class JarViewController: UIViewController {
         affirmations.loadData {
             print(self.affirmations.affirmationArray[0].affirmation)
             self.affirmationText = self.affirmations.affirmationArray[0].affirmation
-            
+
         }
         showAlert(title: "Affirmation", message: self.affirmationText)
 //

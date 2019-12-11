@@ -17,7 +17,7 @@
 		2398C609239A09DB0010856E /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C608239A09DB0010856E /* SearchTableViewCell.swift */; };
 		2398C60B239A0FC10010856E /* NotificationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C60A239A0FC10010856E /* NotificationsTableViewCell.swift */; };
 		2398C60D239A0FD50010856E /* NotificationsBlankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C60C239A0FD50010856E /* NotificationsBlankTableViewCell.swift */; };
-		2398C615239AD1F60010856E /* FriendRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C614239AD1F60010856E /* FriendRequestViewController.swift */; };
+		2398C615239AD1F60010856E /* SendAffirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C614239AD1F60010856E /* SendAffirmationViewController.swift */; };
 		2398C617239AD40B0010856E /* BlockUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C616239AD40B0010856E /* BlockUserTableViewCell.swift */; };
 		2398C619239AD4390010856E /* BlockedUsersTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C618239AD4390010856E /* BlockedUsersTitleTableViewCell.swift */; };
 		2398C61B239AD44D0010856E /* BlockedUsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C61A239AD44D0010856E /* BlockedUsersTableViewCell.swift */; };
@@ -50,7 +50,7 @@
 		2398C608239A09DB0010856E /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		2398C60A239A0FC10010856E /* NotificationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewCell.swift; sourceTree = "<group>"; };
 		2398C60C239A0FD50010856E /* NotificationsBlankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsBlankTableViewCell.swift; sourceTree = "<group>"; };
-		2398C614239AD1F60010856E /* FriendRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestViewController.swift; sourceTree = "<group>"; };
+		2398C614239AD1F60010856E /* SendAffirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendAffirmationViewController.swift; sourceTree = "<group>"; };
 		2398C616239AD40B0010856E /* BlockUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockUserTableViewCell.swift; sourceTree = "<group>"; };
 		2398C618239AD4390010856E /* BlockedUsersTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockedUsersTitleTableViewCell.swift; sourceTree = "<group>"; };
 		2398C61A239AD44D0010856E /* BlockedUsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockedUsersTableViewCell.swift; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 				23C65AD923981C63008A249A /* JarViewController.swift */,
 				23C65ADB23981C74008A249A /* SearchViewController.swift */,
 				2398C608239A09DB0010856E /* SearchTableViewCell.swift */,
-				2398C614239AD1F60010856E /* FriendRequestViewController.swift */,
+				2398C614239AD1F60010856E /* SendAffirmationViewController.swift */,
 				2382F783239EDBF100D41A82 /* GravyForLater */,
 				23C6C31C239439EF00612EB8 /* Main.storyboard */,
 				23C6C31F239439F100612EB8 /* Assets.xcassets */,
@@ -321,7 +321,7 @@
 				2398C61B239AD44D0010856E /* BlockedUsersTableViewCell.swift in Sources */,
 				23C65ADC23981C74008A249A /* SearchViewController.swift in Sources */,
 				2398C60B239A0FC10010856E /* NotificationsTableViewCell.swift in Sources */,
-				2398C615239AD1F60010856E /* FriendRequestViewController.swift in Sources */,
+				2398C615239AD1F60010856E /* SendAffirmationViewController.swift in Sources */,
 				23A6DF5F239B56D0003E8886 /* UserInfo.swift in Sources */,
 				23253127239CB45500630724 /* NewEditProfileViewController.swift in Sources */,
 				2329DE93239E36120088C667 /* Affirmation.swift in Sources */,

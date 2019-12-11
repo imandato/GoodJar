@@ -34,7 +34,7 @@ class SearchViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showProfile"{
-            let destination = segue.destination as! FriendRequestViewController
+            let destination = segue.destination as! SendAffirmationViewController
             let selectedIndexPath = tableView.indexPathForSelectedRow!
             destination.goodJarUser = goodJarUsers.jarUserArray[selectedIndexPath.row]
         }

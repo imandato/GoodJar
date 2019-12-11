@@ -692,7 +692,7 @@
         <!--Good Jar-->
         <scene sceneID="3C5-Pg-gCu">
             <objects>
-                <viewController id="RlG-fV-qM7" customClass="FriendRequestViewController" customModule="GoodJar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RlG-fV-qM7" customClass="SendAffirmationViewController" customModule="GoodJar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TwP-gc-ige">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
