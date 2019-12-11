@@ -11,7 +11,6 @@ import Firebase
 
 class SearchViewController: UIViewController {
     
-    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
     var goodJarUsers: GoodJarUsers!

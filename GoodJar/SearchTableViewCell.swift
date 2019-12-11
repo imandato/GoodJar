@@ -15,13 +15,15 @@ class SearchTableViewCell: UITableViewCell {
     @IBOutlet weak var nameSearchLabel: UILabel!
     @IBOutlet weak var usernameSearchLabel: UILabel!
     
-
+    var user: GoodJarUser!
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
         searchProfPhoto.layer.masksToBounds = true
         searchProfPhoto.layer.cornerRadius = searchProfPhoto.bounds.width / 2
     }
+    
     
     var goodJarUser: GoodJarUser! {
         didSet{
@@ -35,7 +37,10 @@ class SearchTableViewCell: UITableViewCell {
             searchProfPhoto.sd_setImage(with: url, placeholderImage: UIImage(named: "profileStock"))
         }
     }
-
+    
+    
+    
+    
 }
 
 //goodJarUser.photoURL
