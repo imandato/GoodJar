@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class SearchTableViewCell: UITableViewCell {
     
@@ -25,12 +26,13 @@ class SearchTableViewCell: UITableViewCell {
     var goodJarUser: GoodJarUser! {
         didSet{
             nameSearchLabel.text = goodJarUser.displayName
+            usernameSearchLabel.text = goodJarUser.email
             guard let url = URL(string: goodJarUser.photoURL ) else{
                 searchProfPhoto.image = UIImage(named: "profileStock")
                 print("ERROR: cannot convert photoURL String to a URL")
                 return
             }
-//            searchProfPhoto.sd_setImage(with: url, placeholderImage: UIImage(named: "profileStock"))
+            searchProfPhoto.sd_setImage(with: url, placeholderImage: UIImage(named: "profileStock"))
         }
     }
 

@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class SearchViewController: UIViewController {
-
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
@@ -33,11 +33,11 @@ class SearchViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-           if segue.identifier == "showProfile" {
-                let destination = segue.destination as! FriendRequestViewController
-                    destination.goodJarUsers = goodJarUsers
-                    print("Settings: \(goodJarUsers)")
-                }
+        if segue.identifier == "showProfile"{
+            let destination = segue.destination as! FriendRequestViewController
+            let selectedIndexPath = tableView.indexPathForSelectedRow!
+            destination.goodJarUser = goodJarUsers.jarUserArray[selectedIndexPath.row]
+        }
     }
     
     func leaveViewController() {
@@ -54,7 +54,7 @@ class SearchViewController: UIViewController {
     
     @IBAction func removeButtonPressed(_ sender: UIButton) {
     }
-        
+    
 }
 
 
@@ -72,6 +72,10 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 90
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }

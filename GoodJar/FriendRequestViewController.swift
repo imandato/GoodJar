@@ -7,44 +7,43 @@
 //
 
 import UIKit
+import SDWebImage
+
 
 class FriendRequestViewController: UIViewController {
     
     @IBOutlet weak var userProfilePhoto: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    
-    @IBOutlet weak var affirmationTextView: UITextView!
     @IBOutlet weak var sendAffirmationButtonPressed: UIButton!
+    @IBOutlet weak var affirmationTextField: UITextField!
     
-    var goodJarUsers: GoodJarUsers!
     var affirmation: Affirmation!
-    var affirmations: Affirmations!
+    var goodJarUser: GoodJarUser!
+    var goodJarUsers: GoodJarUsers!
+    var searchVC: SearchViewController!
+    var recipientUserID = ""
+    
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        goodJarUsers = GoodJarUsers()
         affirmation = Affirmation()
-        affirmations = Affirmations()
+        goodJarUsers = GoodJarUsers()
+        searchVC = SearchViewController()
         
-        goodJarUsers.loadData {
-            self.nameLabel.text! = self.goodJarUsers.jarUserArray[0].displayName
-            self.affirmationTextView.text! = "What do you love about \(self.goodJarUsers.jarUserArray[0].displayName)?"
-            print("fried: \(self.goodJarUsers)")
-
+        nameLabel.text = goodJarUser.displayName
+        guard let url = URL(string: goodJarUser.photoURL ) else{
+            userProfilePhoto.image = UIImage(named: "profileStock")
+            print("ERROR: cannot convert photoURL String to a URL")
+            return
         }
-
+        userProfilePhoto.sd_setImage(with: url, placeholderImage: UIImage(named: "profileStock"))
+        recipientUserID = goodJarUser.documentID
     }
     
     
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-           if segue.identifier == "showJarAffirmation" {
-                let destination = segue.destination as! JarViewController
-                    destination.goodJarUsers = goodJarUsers
-                    print("fried: \(goodJarUsers)")
-                }
-    }
     
     func leaveViewController() {
         let isPresentingInAddMode = presentingViewController is UINavigationController
@@ -55,26 +54,20 @@ class FriendRequestViewController: UIViewController {
         }
     }
     
-    @IBAction func imageTapped(_ sender: Any) {
-        affirmationTextView.becomeFirstResponder()
-        affirmationTextView.text! = ""
-    }
-    
     @IBAction func submitAffirmationPressed(_ sender: Any) {
 //        affirmations.affirmationArray[0].affirmation = affirmationTextView.text!
-        affirmation.affirmation = affirmationTextView.text!
-        
+        affirmation.affirmation = affirmationTextField.text!
+        affirmation.recipientUserID = recipientUserID
         affirmation.saveData() { success in
             if success {
                 self.leaveViewController()
-                self.affirmationTextView.text! = ""
-                self.affirmationTextView.resignFirstResponder()
-                
-            }else{
+                print("DATA SAVED")
+            } else{
                 print ("*** ERROR Counldn't leave this  View Controller because data wasn't saved")
             }
         }
     }
+    
     
     @IBAction func cancelBarButtonPressed(_ sender: UIBarButtonItem) {
         leaveViewController()

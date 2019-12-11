@@ -94,6 +94,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2382F783239EDBF100D41A82 /* GravyForLater */ = {
+			isa = PBXGroup;
+			children = (
+				23A6DF60239B5B2C003E8886 /* UsersInfo.swift */,
+				23A6DF5E239B56D0003E8886 /* UserInfo.swift */,
+				2329DE96239E619A0088C667 /* ProfilePhoto.swift */,
+				2329DE98239E61A50088C667 /* ProfilePhotos.swift */,
+				23C65AE523981CE0008A249A /* PrivacyViewController.swift */,
+				2398C613239A10280010856E /* PrivacyCustomCells */,
+				23C6C31A239439EF00612EB8 /* ViewController.swift */,
+				23253126239CB45500630724 /* NewEditProfileViewController.swift */,
+				2329DE9A239E9FED0088C667 /* AcceptFriendRequest.swift */,
+				23C65AE323981CC1008A249A /* NotificationsViewController.swift */,
+				2398C60E239A0FE10010856E /* NotificationsCustomCells */,
+			);
+			path = GravyForLater;
+			sourceTree = "<group>";
+		};
 		2398C60E239A0FE10010856E /* NotificationsCustomCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,24 +155,14 @@
 				23C6C318239439EF00612EB8 /* AppDelegate.swift */,
 				23C3ADF6239AE6BF00B7667B /* GoodJarUser.swift */,
 				238D0926239C80AA00DCE987 /* GoodJarUsers.swift */,
-				23A6DF5E239B56D0003E8886 /* UserInfo.swift */,
-				23A6DF60239B5B2C003E8886 /* UsersInfo.swift */,
 				2329DE92239E36120088C667 /* Affirmation.swift */,
 				2329DE94239E361F0088C667 /* Affirmations.swift */,
-				2329DE96239E619A0088C667 /* ProfilePhoto.swift */,
-				2329DE98239E61A50088C667 /* ProfilePhotos.swift */,
-				23C6C31A239439EF00612EB8 /* ViewController.swift */,
 				23C65AD72397896C008A249A /* SettingsViewController.swift */,
 				23C65AD923981C63008A249A /* JarViewController.swift */,
 				23C65ADB23981C74008A249A /* SearchViewController.swift */,
 				2398C608239A09DB0010856E /* SearchTableViewCell.swift */,
 				2398C614239AD1F60010856E /* FriendRequestViewController.swift */,
-				23253126239CB45500630724 /* NewEditProfileViewController.swift */,
-				2329DE9A239E9FED0088C667 /* AcceptFriendRequest.swift */,
-				23C65AE323981CC1008A249A /* NotificationsViewController.swift */,
-				2398C60E239A0FE10010856E /* NotificationsCustomCells */,
-				23C65AE523981CE0008A249A /* PrivacyViewController.swift */,
-				2398C613239A10280010856E /* PrivacyCustomCells */,
+				2382F783239EDBF100D41A82 /* GravyForLater */,
 				23C6C31C239439EF00612EB8 /* Main.storyboard */,
 				23C6C31F239439F100612EB8 /* Assets.xcassets */,
 				23C6C321239439F100612EB8 /* LaunchScreen.storyboard */,

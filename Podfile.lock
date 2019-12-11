@@ -307,6 +307,9 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - SDWebImage (5.4.0):
+    - SDWebImage/Core (= 5.4.0)
+  - SDWebImage/Core (5.4.0)
 
 DEPENDENCIES:
   - Firebase/Core
@@ -316,6 +319,7 @@ DEPENDENCIES:
   - FirebaseUI/Google
   - GoogleMaps
   - GooglePlaces
+  - SDWebImage (~> 5.0)
 
 SPEC REPOS:
   trunk:
@@ -346,6 +350,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+    - SDWebImage
 
 SPEC CHECKSUMS:
   abseil: 18063d773f5366ff8736a050fe035a28f635fd27
@@ -375,7 +380,8 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 43b8b64263023d4f32caa0b40f4c8bfa3c5f36d8
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  SDWebImage: 5bf6aec6481ae2a062bdc59f9d6c1d1e552090e0
 
-PODFILE CHECKSUM: 77a264d87cd8dd88a271b84d095c9d6833555a6f
+PODFILE CHECKSUM: b14d86a35e796f1d23f06d1e60b998a167711d45
 
 COCOAPODS: 1.8.3

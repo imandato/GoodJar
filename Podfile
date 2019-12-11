@@ -10,5 +10,5 @@ target 'GoodJar' do
     pod 'Firebase/Firestore'
     pod 'FirebaseUI/Auth'
     pod 'FirebaseUI/Google'
-    # pod 'SDWebImage', '~> 5.0'
+    pod 'SDWebImage', '~> 5.0'
 end
